@@ -1,0 +1,66 @@
+<odoo>
+    <!-- Menu Navigasi Utama -->
+    <menuitem id="menu_coworking_root"
+              name="Coworking Management"
+              sequence="10"/>
+
+    <!-- Menu dan Action untuk Coworking Space -->
+    <menuitem id="menu_coworking_hol_space"
+              name="Floor Plan"
+              parent="menu_coworking_root"
+              sequence="1"/>
+    <record id="action_coworking_hol_space" model="ir.actions.act_window">
+        <field name="name">Coworking Space</field>
+        <field name="res_model">coworking.hol_space</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_coworking_hol_space_action"
+              name="Floor"
+              parent="menu_coworking_hol_space"
+              action="action_coworking_hol_space"
+              sequence="1"/>
+
+    <!-- Menu dan Action untuk Booking -->
+    <menuitem id="menu_coworking_hol_booking"
+              name="Booking"
+              parent="menu_coworking_root"
+              sequence="2"/>
+    <record id="action_coworking_hol_booking" model="ir.actions.act_window">
+        <field name="name">Space Booking</field>
+        <field name="res_model">coworking.hol_booking</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_coworking_hol_booking_action"
+              name="Booking"
+              parent="menu_coworking_hol_booking"
+              action="action_coworking_hol_booking"
+              sequence="1"/>
+
+    <!-- Menu dan Action untuk Membership (Anggota) -->
+    <menuitem id="menu_coworking_hol_member"
+              name="Membership"
+              parent="menu_coworking_root"
+              sequence="3"/>
+    <record id="action_coworking_hol_member" model="ir.actions.act_window">
+        <field name="name">Membership Management</field>
+        <field name="res_model">coworking.hol_member</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_coworking_hol_member_action"
+              name="Membership"
+              parent="menu_coworking_hol_member"
+              action="action_coworking_hol_member"
+              sequence="1"/>
+
+    <!-- Menu dan Action untuk Membership Plan -->
+    <record id="action_coworking_hol_membership_plan" model="ir.actions.act_window">
+        <field name="name">Membership Plan</field>
+        <field name="res_model">coworking.hol_membership_plan</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_coworking_hol_membership_plan_action"
+              name="Membership Plan"
+              parent="menu_coworking_hol_member"
+              action="action_coworking_hol_membership_plan"
+              sequence="2"/>
+</odoo>

@@ -1,0 +1,33 @@
+<odoo>
+    <!-- Views untuk model coworking.hol_member -->
+    <record id="view_coworking_hol_member_list" model="ir.ui.view">
+        <field name="name">coworking.hol_member.list</field>
+        <field name="model">coworking.hol_member</field>
+        <field name="arch" type="xml">
+            <list string="Daftar Anggota">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="hol_membership_date"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_coworking_hol_member_form" model="ir.ui.view">
+        <field name="name">coworking.hol_member.form</field>
+        <field name="model">coworking.hol_member</field>
+        <field name="arch" type="xml">
+            <form string="Detail Anggota">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="hol_membership_date"/>
+                        <field name="membership_plan_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

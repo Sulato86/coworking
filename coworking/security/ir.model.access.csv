@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_coworking_hol_space_user,coworking.hol_space user,model_coworking_hol_space,base.group_user,1,1,1,1
+access_coworking_hol_booking_user,coworking.hol_booking user,model_coworking_hol_booking,base.group_user,1,1,1,1
+access_coworking_hol_member_user,coworking.hol_member user,model_coworking_hol_member,base.group_user,1,1,1,1
+access_hol_membership_plan,coworking.hol_membership_plan,model_coworking_hol_membership_plan,base.group_user,1,1,1,1

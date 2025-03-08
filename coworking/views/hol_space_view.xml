@@ -1,0 +1,30 @@
+<odoo>
+    <!-- Views untuk model coworking.hol_space -->
+    <record id="view_coworking_hol_space_list" model="ir.ui.view">
+        <field name="name">coworking.hol_space.list</field>
+        <field name="model">coworking.hol_space</field>
+        <field name="arch" type="xml">
+            <list string="List Coworking Space">
+                <field name="name"/>
+                <field name="capacity"/>
+                <field name="available"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_coworking_hol_space_form" model="ir.ui.view">
+        <field name="name">coworking.hol_space.form</field>
+        <field name="model">coworking.hol_space</field>
+        <field name="arch" type="xml">
+            <form string="Coworking Space">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="capacity"/>
+                        <field name="available"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
