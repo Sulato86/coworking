@@ -19,13 +19,32 @@
         <field name="arch" type="xml">
             <form string="Membership Plan">
                 <sheet>
+                    <field name="active" invisible="1"/>
                     <group>
-                        <field name="name"/>
-                        <field name="price"/>
-                        <field name="duration"/>
-                        <field name="description"/>
-                        <field name="active"/>
+                        <group>
+                            <field name="name"/>
+                            <field name="price"/>
+                        </group>
+                        <group>
+                            <field name="duration"/>
+                        </group>
                     </group>
+                    <notebook>
+                        <page name="service" string="Service">
+                            <field name="line_ids" 
+                                widget="sol_o2m"
+                                mode="list">
+                                <list editable="bottom">
+                                    <field name="service_type_id"/>
+                                    <field name="get_service_type"/>
+                                    <field name="description"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page name="description" string="Description">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

@@ -63,4 +63,11 @@
               parent="menu_coworking_hol_member"
               action="action_coworking_hol_membership_plan"
               sequence="2"/>
+    <!-- Configuration -->
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="configuration_menu_categ" 
+        name="Configuration" 
+        parent="menu_coworking_root" 
+        sequence="100"/>
 </odoo>

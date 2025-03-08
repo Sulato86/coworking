@@ -3,3 +3,6 @@ access_coworking_hol_space_user,coworking.hol_space user,model_coworking_hol_spa
 access_coworking_hol_booking_user,coworking.hol_booking user,model_coworking_hol_booking,base.group_user,1,1,1,1
 access_coworking_hol_member_user,coworking.hol_member user,model_coworking_hol_member,base.group_user,1,1,1,1
 access_hol_membership_plan,coworking.hol_membership_plan,model_coworking_hol_membership_plan,base.group_user,1,1,1,1
+
+access_hol_membership_plan_line,coworking.hol_membership_plan_line,model_coworking_hol_membership_plan_line,base.group_user,1,1,1,1
+access_coworking_service_type,coworking_coworking_service_type,model_coworking_service_type,base.group_user,1,1,1,1

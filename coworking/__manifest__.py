@@ -30,6 +30,7 @@
         'views/hol_booking_view.xml',
         'views/hol_member_view.xml',
         'views/hol_membership_plan_view.xml',
+        'views/service_type.xml',
         'views/views.xml',
         'views/templates.xml',
     ],
